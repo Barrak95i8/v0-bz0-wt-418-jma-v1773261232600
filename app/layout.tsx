@@ -1,5 +1,6 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -9,13 +10,6 @@ export const metadata: Metadata = {
   title: 'TaxEase Canada - Effortless Tax Filing for Canadians',
   description: 'File your Canadian taxes in minutes with TaxEase. Expert support for T4/T4A, FHSA, and more. CRA EFILE certified. Get your maximum refund.',
   generator: 'v0.app',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-    themeColor: '#0B3D7A',
-  },
   openGraph: {
     title: 'TaxEase Canada - Effortless Tax Filing',
     description: 'File your Canadian taxes in minutes. Expert support, maximum refunds.',
@@ -41,6 +35,14 @@ export const metadata: Metadata = {
   },
 }
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#0B3D7A',
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,6 +52,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans antialiased">
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
