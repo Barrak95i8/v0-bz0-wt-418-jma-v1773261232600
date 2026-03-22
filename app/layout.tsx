@@ -7,14 +7,29 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://taxease.ca'),
   title: 'TaxEase Canada - Effortless Tax Filing for Canadians',
   description: 'File your Canadian taxes in minutes with TaxEase. Expert support for T4/T4A, FHSA, and more. CRA EFILE certified. Get your maximum refund.',
   generator: 'v0.app',
+  keywords: ['Tax filing', 'Canada taxes', 'T4', 'T4A', 'FHSA', 'CRA EFILE', 'Tax refund', 'TaxEase'],
+  authors: [{ name: 'TaxEase Team' }],
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
     title: 'TaxEase Canada - Effortless Tax Filing',
     description: 'File your Canadian taxes in minutes. Expert support, maximum refunds.',
     url: 'https://taxease.ca',
+    siteName: 'TaxEase',
+    locale: 'en_CA',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'TaxEase Canada - Effortless Tax Filing',
+    description: 'File your Canadian taxes in minutes. Expert support, maximum refunds.',
   },
   icons: {
     icon: [
