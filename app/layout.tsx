@@ -7,7 +7,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://taxease.ca'),
+  metadataBase: new URL('https://v0-bz0-wt-418-jma-v17732612326-git-6230df-bkmq95-2908s-projects.vercel.app'),
   title: 'TaxEase Canada - Effortless Tax Filing for Canadians',
   description: 'File your Canadian taxes in minutes with TaxEase. Expert support for T4/T4A, FHSA, and more. CRA EFILE certified. Get your maximum refund.',
   generator: 'v0.app',
@@ -19,17 +19,23 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'TaxEase Canada - Effortless Tax Filing',
-    description: 'File your Canadian taxes in minutes. Expert support, maximum refunds.',
-    url: 'https://taxease.ca',
+    type: 'website',
+    url: 'https://v0-bz0-wt-418-jma-v17732612326-git-6230df-bkmq95-2908s-projects.vercel.app/',
+    title: 'TaxEase Canada - Effortless Tax Filing for Canadians',
+    description: 'File your Canadian taxes in minutes with TaxEase. Expert support for T4/T4A, FHSA, and more. CRA EFILE certified. Get your maximum refund.',
     siteName: 'TaxEase',
     locale: 'en_CA',
-    type: 'website',
+    images: [
+      {
+        url: 'https://metatags.io/images/meta-tags.png',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TaxEase Canada - Effortless Tax Filing',
-    description: 'File your Canadian taxes in minutes. Expert support, maximum refunds.',
+    title: 'TaxEase Canada - Effortless Tax Filing for Canadians',
+    description: 'File your Canadian taxes in minutes with TaxEase. Expert support for T4/T4A, FHSA, and more. CRA EFILE certified. Get your maximum refund.',
+    images: ['https://metatags.io/images/meta-tags.png'],
   },
   icons: {
     icon: [
